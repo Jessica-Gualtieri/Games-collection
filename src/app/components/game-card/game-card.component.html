@@ -2,18 +2,18 @@
     <div id="inside">
         <header>
             <div class="left">
-                <p id="name">Subnautica</p>
+                <p id="name">{{game().name}}</p>
             </div>
             <div class="right">
-                <img class="steam" src="/img/steam-logo.png">
+                <img class="platform" src={{game().platformLogoPath}}>
             </div>
         </header>
         <figure>
-            <img src="/img/subnautica.jpeg">
-            <figcaption>23/01/2018</figcaption>
+            <img src={{game().imagePath}}>
+            <figcaption>{{game().releaseDate}}</figcaption>
         </figure>
         <div id="description">
-            <p>Descendez dans les profondeurs d'un monde sous-marin étranger plein de merveilles et périls. Concevez des équipements, pilotez des sous-marins, terraformez un terrain voxel, et adaptez-vous à la vie sauvage afin d’explorer le monde, tout en essayant de survivre.</p>
+            <p>{{game().description}}</p>
         </div>
     </div>
 </div>

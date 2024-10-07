@@ -10,6 +10,8 @@
 #inside {
     padding: 5px;
     background-color: white;
+    height: 375px;
+    overflow: hidden;
 }
 
 header {
@@ -24,7 +26,7 @@ header {
         margin: 0;
     }
 
-    .right .steam {
+    .right .platform {
         width: 16px;
         height: 16px;
     }
