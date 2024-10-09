@@ -1,0 +1,36 @@
+#search-bar {
+	display: flex;
+	background-color: white;
+	border-radius: 40px;
+	margin: 50px auto;
+	width: 400px;
+	box-shadow: 3px 3px 10px -3px grey;
+	overflow: hidden;
+
+    input {
+        all: unset;
+        flex-grow: 1;
+        padding: 10px 20px;
+        color: #dc758a;
+    }
+
+    button {
+        border: none;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 40px;
+        background-color: #FCAEBD;
+        width: 30px;
+        cursor: pointer;
+
+        img {
+            max-width: 16px;
+            max-height: 16px;
+        }
+    }
+
+
+    button:hover {
+        background-color: #dc758a;
+    }
+}
