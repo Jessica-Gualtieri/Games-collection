@@ -13,6 +13,8 @@ import { SearchBarComponent } from "./components/search-bar/search-bar.component
 export class AppComponent {
   game1!: Game;
   game2!: Game;
+  count: number = 0;
+  search: string = "";
 
   constructor() {
     this.game1 = new Game;
@@ -28,5 +30,9 @@ export class AppComponent {
     this.game2.description = "Detroit: Become Human met le destin de l'humanité et des androïdes entre vos mains, dans un futur proche où les machines sont devenues plus intelligentes que les hommes. Tous vos choix ont une incidence sur la suite du jeu, dans l'une des narrations les plus élaborées jamais écrites.";
     this.game2.releaseDate = "18/06/2020";
     this.game2.imagePath = "/img/detroit_become_human.jpg";
+  }
+
+  increaseCount() {
+    this.count++;
   }
 }

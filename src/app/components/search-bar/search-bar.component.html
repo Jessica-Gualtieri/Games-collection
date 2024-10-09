@@ -1,6 +1,6 @@
 <div id="search-bar">
-    <input placeholder="Rechercher..."/>
-    <button>
+    <input placeholder="Rechercher..." [(ngModel)]="search"/>
+    <button (click)="searchClick()">
         <img src="/img/svg-searchbar.svg">
     </button>
 </div>
